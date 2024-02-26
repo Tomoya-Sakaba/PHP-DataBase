@@ -1,0 +1,83 @@
+.error {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+label {
+  display: inline-block;
+  width: 100px;
+  text-align: right;
+  vertical-align: top;
+}
+
+input[type="text"] {
+  width: 50%;
+  height: 30px;
+}
+
+.form {
+  margin-bottom: 10px;
+}
+
+textarea {
+  width: 50%;
+  height: 300px;
+  resize: none;
+  font-weight: normal;
+}
+
+.container {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  line-height: 1;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  border-radius: 20px;
+  width: 79px;
+  height: 45px;
+  font-weight: bold;
+  border: none;
+  transition: 0.3s;
+  box-shadow: 2px 1px 3px 2px rgba(0, 0, 0, 0.5);
+  background-image: linear-gradient(42deg, rgba(247, 216, 12, 1) 10%, rgba(255, 134, 11, 1) 90%);
+}
+
+
+.btn:hover {
+  opacity: .7;
+}
+
+.btn:hover {
+  opacity: .7;
+}
+
+.title {
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.message {
+  margin-left: 50px;
+}
+
+.contents ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contents li {
+  margin-left: 20px;
+}
+
+.post {
+  display: block;
+  width: 100%;
+  white-space: nowrap; /* 改行しない */
+  text-overflow: ellipsis; /* 末尾に... */
+  overflow: hidden; /* 表示範囲外を隠す　*/
+}

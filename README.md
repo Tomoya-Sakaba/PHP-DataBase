@@ -1,1 +1,22 @@
-# PHP-DataBase
+# データベースの作成
+
+SQL:
+
+```sql
+create database mydb;
+
+CREATE TABLE posts (
+  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  title VARCHAR(255) NOT NULL,
+  message TEXT NOT NULL,
+  created DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE comments (
+  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  post_id INT NOT NULL,
+  comment TEXT NOT NULL,
+  created TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (post_id) REFERENCES posts(id)
+);
+```
